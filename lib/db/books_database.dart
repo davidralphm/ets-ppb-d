@@ -12,7 +12,7 @@ class BooksDatabase {
   Future<Database> get database async {
     if (_database != null) return _database!;
 
-    _database = await _initDB('books_test_1.db');
+    _database = await _initDB('books.db');
 
     return _database!;
   }
